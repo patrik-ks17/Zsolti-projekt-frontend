@@ -1,0 +1,97 @@
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+* {
+  text-align: center;
+  box-sizing: border-box;
+}
+body {
+  background-color: #242424;
+}
+
+header {
+  background: url(../public/kocka.png) no-repeat center center;
+  background-size: cover;
+  height: 400px;
+  position: relative;
+}
+
+h1 {
+  color: white;
+  margin: auto;
+  display: inline-flex;  
+  text-shadow: 2px 2px black;
+}
+
+nav > ul > li {
+  list-style-type: none;
+  display: inline-flex;
+  margin: 15px;
+  text-shadow: 2px 2px black;
+}
+
+nav > ul > li > a {
+  text-decoration: none;
+  color: white;
+}
+
+nav > ul > li:hover {
+  transform: scale3d(1.3, 1.3, 1);
+  transition-duration: 1s;
+  background-color: #14630095;
+  border-radius: 50%;
+  padding: 5px 5px 5px 5px;
+}
+
+.card-container {
+  display: inline-flex;
+}
+
+.card {
+  border: 1px solid #ddd;
+  width: 300px;
+  height: 400px;
+  display: grid;
+  margin: 15px; 
+}
+
+.card img {
+  width: 100%;
+  height: 300px;
+}
