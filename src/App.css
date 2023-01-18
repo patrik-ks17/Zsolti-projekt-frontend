@@ -95,3 +95,11 @@ nav > ul > li:hover {
   width: 100%;
   height: 300px;
 }
+
+#markak, #tipusok {
+  display: none;
+}
+
+.show {
+  display:block!important;
+}

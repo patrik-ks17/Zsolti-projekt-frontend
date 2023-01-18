@@ -24,7 +24,7 @@ function Tipusok() {
 	};
 
 	return (
-		<div>
+		<div id ="tipusok">
 			<select value={value} onChange={handleChange}>
 			{Array.from(kockak).map(kocka => (
 				<option value={kocka.marka}  key={kocka.marka }>{kocka.marka}</option>

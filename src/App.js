@@ -14,10 +14,7 @@ function App() {
   );
 }
 
-function onClick() {
-  const navigate = document.getElementsByClassName('select')
-  console.log(navigate);
-}
+
 
 
 export default App;

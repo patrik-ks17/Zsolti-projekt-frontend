@@ -5,13 +5,18 @@ function Header() {
 		</header>
 		<h1>Rubik kockák</h1>
 		<nav>
-			<ul className="select">
-				<li><a href="markak">Márkák</a></li>
-				<li><a href="tipusok">Típusok</a></li>
+			<ul>
+				<li><a href="#markak" dataset="markak" onClick={(event) => Navigate(event)}>Márkák</a></li>
+				<li><a href="#tipusok" dataset="tipusok" onClick={(event) => Navigate(event)}>Típusok</a></li>
 			</ul>
 		</nav>
 	</div>
 	)
+}
+
+function Navigate(event) {
+	const panel = event.target.getAttribute('dataset')
+	document.getElementById(panel).classList.toggle('show')
 }
 
 

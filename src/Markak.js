@@ -2,7 +2,7 @@ import { useState, useEffect } from 'react';
 
 function Markak() {
 	return (
-		<div>
+		<div id="markak">
 			<Card/>
 		</div>
 	)
@@ -22,9 +22,9 @@ function Card() {
 			});
 	}, [kockak]);
 	return (
-		<div  className='card-container'>
+		<div className='card-container'>
 			{Array.from(kockak).map(kocka => (
-				<div className='card'>
+				<div className='card' key={kocka.marka}>
 					<img src={kocka.marka+ ".png"} alt={kocka.marka}></img>
 					<h3>{kocka.marka}</h3>
 				</div>
